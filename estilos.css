@@ -10,8 +10,25 @@
     width: 325px;
 }
 
+.color-amarillo{
+    color: #DAFF01;
+}
+
+.color-lila{
+    background-color: #9353FF;
+    color: #fff;
+}
+
+.posicion{
+    top:55%;
+}
+
 @media (min-width: 768px){
     .div-novedades{
         width: 696px;
+    }
+
+    .posicion{
+        top:40%;
     }
 }
