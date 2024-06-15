@@ -168,79 +168,105 @@
                 <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/camiseta.png" alt="Modelo masculino vistiendo gorro negro, blusa marrón y pantalones jeans, con una pared gris de fondo.">
                 <img class="d-none d-xl-block" src="./assets/Mobile/productos/camiseta.png" alt="Modelo masculino vistiendo gorro negro, blusa marrón y pantalones jeans, con una pared gris de fondo.">
                 <div class="card-body">
-                    <h5 class="card-title">Camiseta Confort</h5>
+                    <h5 class="card-title fw-bold">Camiseta Confort</h5>
                     <p class="card-text text-menor">Multicolores y de varios tamaños. Tela de algodón 100% fresca para el verano. Diseño unisex.</p>
-                    <p>$25</p>
-                    <a href="#" class="btn btn-primary color-lila rounded-0 border-0">Ver Más</a>
+                    <p class="fw-bold">$25</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        modal
+                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#carritoModal1">
+                        Ver Más
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="carritoModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
                             <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="modal-title fs-5" id="exampleModalLabel">
-                                    <i class="bi bi-check-circle"></i>
-                                    Revisa detalles sobre el producto
+                                <div class="modal-header bg-black text-bg-dark">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        <i class="bi bi-check-circle color-amarillo"></i>
+                                        Revisa detalles sobre el producto
+                                    </h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="">
-                                    <div>
-                                        <img src="./assets/Desktop/productos/camiseta.png" alt="">
-                                    </div>
-                                    <div class="">
-                                        <h2>Chaqueta Jeans</h2>
-                                        <p>Modelo unisex oversize con cuello de gamuza. ¡Atemporal y auténtica!</p>
-                                    </div>
-                                    <div class="">
-                                        <p>$40</p>
-                                        <p>Vendido y entregado por Riplay</p>
-                                    </div>
-                                    <div class="">
-                                        <h2>Colores:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <!-- Imagen -->
+                                        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                                            <img src="./assets/Desktop/productos/camiseta.png" class="img-fluid" alt="Modelo masculino vistiendo gorro negro, blusa marrón y pantalones jeans, con una pared gris de fondo.">
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="">
-                                        <h2>Tamanho:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
+                                        <!-- Información del Producto -->
+                                        <div class=" col-12 col-lg-6 rounded-0">
+                                            <h2 class="fs-5 fw-bold pt-3">Camiseta Confort</h2>
+                                            <p class="">Multicolores y de varios tamaños. Tela de algodón 100% fresca para el verano. Diseño unisex.</p>
+                                            <hr>
+                                            <p class="fs-4 fw-bold">$25</p>
+                                            <p class="color-gris">Vendido y entregado por Riplay</p>
+                                            <hr>
+                                            <h4 class="fs-6 fw-bold">Colores:</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color1">
+                                                    <label class="form-check-label label-espacio" for="color1">
+                                                        Azul claro
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color2" checked>
+                                                    <label class="form-check-label label-espacio" for="color2">
+                                                        Offwhite
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color3" checked>
+                                                    <label class="form-check-label label-espacio" for="color3">
+                                                        Negro
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h4 class="mt-3 fs-6 fw-bold">Tamaño:</h4>
+                                            <div class="d-flex flex-wrap align-items-start pb-5">
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-s">
+                                                    <label class="form-check-label label-espacio" for="size-s">
+                                                        S
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center " type="radio" name="size" id="size-m" checked>
+                                                    <label class="form-check-label label-espacio" for="size-m">
+                                                        M
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-l">
+                                                    <label class="form-check-label label-espacio" for="size-l">
+                                                        L
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xl">
+                                                        XL
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xxl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xxl">
+                                                        XXL
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- Button Añadir al carrito -->
+                                            <button type="button" class="btn btn-primary color-lila rounded-0 border-0">
+                                                Añadir al carrito
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -251,75 +277,100 @@
                 <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/pantalon.png" alt="Modelo femenina vistiendo blusa marrón, pantalones beige, par de zapatos altos de color blanco, collar y pulsera, en un ambiente abierto con suelo de tierra y matorrales secos.">
                 <img class="d-none d-xl-block" src="./assets/Mobile/productos/pantalon.png" alt="Modelo femenina vistiendo blusa marrón, pantalones beige, par de zapatos altos de color blanco, collar y pulsera, en un ambiente abierto con suelo de tierra y matorrales secos.">
                 <div class="card-body">
-                    <h5 class="card-title">Pantalón de Sastre</h5>
+                    <h5 class="card-title fw-bold">Pantalón de Sastre</h5>
                     <p class="card-text text-menor">Modelo Wide Leg de sastrería en lino. ¡Una pieza para toda la vida!</p>
-                    <p>$30</p>
-                    <a href="#" class="btn btn-primary color-lila rounded-0 border-0">Ver Más</a>
+                    <p class="fw-bold">$30</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        modal
+                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#carritoModal2">
+                        Ver Más
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="carritoModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title fs-5" id="exampleModalLabel">
-                                        <i class="bi bi-check-circle"></i>
+                                <div class="modal-header bg-black text-bg-dark">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        <i class="bi bi-check-circle color-amarillo"></i>
                                         Revisa detalles sobre el producto
-                                    </div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="">
-                                    <div>
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="">
-                                        <h2>Chaqueta Jeans</h2>
-                                        <p>Modelo unisex oversize con cuello de gamuza. ¡Atemporal y auténtica!</p>
-                                    </div>
-                                    <div class="">
-                                        <p>$40</p>
-                                        <p>Vendido y entregado por Riplay</p>
-                                    </div>
-                                    <div class="">
-                                        <h2>Colores:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
+                                    <div class="row">
+                                        <!-- Imagen -->
+                                        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                                            <img src="./assets/Desktop/productos/pantalon.png" class="img-fluid" alt="Modelo femenina vistiendo blusa marrón, pantalones beige, par de zapatos altos de color blanco, collar y pulsera, en un ambiente abierto con suelo de tierra y matorrales secos.">
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
+                                        <!-- Información del Producto -->
+                                        <div class=" col-12 col-lg-6 rounded-0">
+                                            <h2 class="fs-5 fw-bold pt-3">Pantalón</h2>
+                                            <p class="fw-bold">Modelo Wide Leg de sastrería en lino. ¡Una pieza para toda la vida!</p>
+                                            <hr>
+                                            <p class="fs-4 fw-bold">$30</p>
+                                            <p class="color-gris">Vendido y entregado por Riplay</p>
+                                            <hr>
+                                            <h4 class="fs-6 fw-bold">Colores:</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color1">
+                                                    <label class="form-check-label label-espacio" for="color1">
+                                                        Azul claro
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color2" checked>
+                                                    <label class="form-check-label label-espacio" for="color2">
+                                                        Offwhite
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color3" checked>
+                                                    <label class="form-check-label label-espacio" for="color3">
+                                                        Negro
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h4 class="mt-3 fs-6 fw-bold">Tamaño:</h4>
+                                            <div class="d-flex flex-wrap align-items-start pb-5">
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-s">
+                                                    <label class="form-check-label label-espacio" for="size-s">
+                                                        S
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center " type="radio" name="size" id="size-m" checked>
+                                                    <label class="form-check-label label-espacio" for="size-m">
+                                                        M
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-l">
+                                                    <label class="form-check-label label-espacio" for="size-l">
+                                                        L
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xl">
+                                                        XL
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xxl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xxl">
+                                                        XXL
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- Button Añadir al carrito -->
+                                            <button type="button" class="btn btn-primary color-lila rounded-0 border-0">
+                                                Añadir al carrito
+                                            </button>
                                         </div>
                                     </div>
-
-                                    <div class="">
-                                        <h2>Tamanho:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
                         </div>
@@ -334,75 +385,100 @@
                 <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/tenis.png" alt="Enfoque en los pies de un modelo usando par de tenis y calcetines de color blanco, y pantalones de color negro, pisando en un charco de agua.">
                 <img class="d-none d-xl-block" src="./assets/Mobile/productos/tenis.png" alt="Enfoque en los pies de un modelo usando par de tenis y calcetines de color blanco, y pantalones de color negro, pisando en un charco de agua.">
                 <div class="card-body">
-                    <h5 class="card-title">Zapatillas Chunky</h5>
+                    <h5 class="card-title fw-bold">Zapatillas Chunky</h5>
                     <p class="card-text text-menor">Sneakers casuales con suela más alta y diseño robusto. Modelo unisex.</p>
-                    <p>$50</p>
-                    <a href="#" class="btn btn-primary color-lila rounded-0 border-0">Ver Más</a>
+                    <p class="fw-bold">$50</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        modal
+                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#carritoModal3">
+                        Ver Más
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="carritoModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title fs-5" id="exampleModalLabel">
-                                        <i class="bi bi-check-circle"></i>
+                                <div class="modal-header bg-black text-bg-dark">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        <i class="bi bi-check-circle color-amarillo"></i>
                                         Revisa detalles sobre el producto
-                                    </div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="">
-                                    <div>
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="">
-                                        <h2>Chaqueta Jeans</h2>
-                                        <p>Modelo unisex oversize con cuello de gamuza. ¡Atemporal y auténtica!</p>
-                                    </div>
-                                    <div class="">
-                                        <p>$40</p>
-                                        <p>Vendido y entregado por Riplay</p>
-                                    </div>
-                                    <div class="">
-                                        <h2>Colores:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
+                                    <div class="row">
+                                        <!-- Imagen -->
+                                        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                                            <img src="./assets/Desktop/productos/tenis.png" class="img-fluid" alt="Enfoque en los pies de un modelo usando par de tenis y calcetines de color blanco, y pantalones de color negro, pisando en un charco de agua.">
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
+                                        <!-- Información del Producto -->
+                                        <div class=" col-12 col-lg-6 rounded-0">
+                                            <h2 class="fs-5 fw-bold pt-3">Zapatillas Chunky</h2>
+                                            <p class="">Sneakers casuales con suela más alta y diseño robusto. Modelo unisex.</p>
+                                            <hr>
+                                            <p class="fs-4 fw-bold">$50</p>
+                                            <p class="color-gris">Vendido y entregado por Riplay</p>
+                                            <hr>
+                                            <h4 class="fs-6 fw-bold">Colores:</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color1">
+                                                    <label class="form-check-label label-espacio" for="color1">
+                                                        Azul claro
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color2" checked>
+                                                    <label class="form-check-label label-espacio" for="color2">
+                                                        Offwhite
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color3" checked>
+                                                    <label class="form-check-label label-espacio" for="color3">
+                                                        Negro
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h4 class="mt-3 fs-6 fw-bold">Tamaño:</h4>
+                                            <div class="d-flex flex-wrap align-items-start pb-5">
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-s">
+                                                    <label class="form-check-label label-espacio" for="size-s">
+                                                        S
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center " type="radio" name="size" id="size-m" checked>
+                                                    <label class="form-check-label label-espacio" for="size-m">
+                                                        M
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-l">
+                                                    <label class="form-check-label label-espacio" for="size-l">
+                                                        L
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xl">
+                                                        XL
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xxl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xxl">
+                                                        XXL
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- Button Añadir al carrito -->
+                                            <button type="button" class="btn btn-primary color-lila rounded-0 border-0">
+                                                Añadir al carrito
+                                            </button>
                                         </div>
                                     </div>
-
-                                    <div class="">
-                                        <h2>Tamanho:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
                         </div>
@@ -417,75 +493,100 @@
                 <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/chaqueta-jeans.png" alt="Modelo masculino vistiendo gorro y pantalones de color negro, chaqueta jeans azul, blusa blanca y cadena dorada, en un fondo blanco.">
                 <img class="d-none d-xl-block" src="./assets/Mobile/productos/chaqueta-jeans.png" alt="Modelo masculino vistiendo gorro y pantalones de color negro, chaqueta jeans azul, blusa blanca y cadena dorada, en un fondo blanco.">
                 <div class="card-body">
-                    <h5 class="card-title">Chaqueta Jeans</h5>
+                    <h5 class="card-title fw-bold">Chaqueta Jeans</h5>
                     <p class="card-text text-menor">Modelo unisex oversize con cuello de gamuza. ¡Atemporal y auténtica!</p>
-                    <p>$40</p>
-                    <a href="#" class="btn btn-primary color-lila rounded-0 border-0">Ver Más</a>
+                    <p class="fw-bold">$40</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        modal
+                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#carritoModal4">
+                        Ver Más
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="carritoModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title fs-5" id="exampleModalLabel">
-                                        <i class="bi bi-check-circle"></i>
+                                <div class="modal-header bg-black text-bg-dark">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        <i class="bi bi-check-circle color-amarillo"></i>
                                         Revisa detalles sobre el producto
-                                    </div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="">
-                                    <div>
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="">
-                                        <h2>Chaqueta Jeans</h2>
-                                        <p>Modelo unisex oversize con cuello de gamuza. ¡Atemporal y auténtica!</p>
-                                    </div>
-                                    <div class="">
-                                        <p>$40</p>
-                                        <p>Vendido y entregado por Riplay</p>
-                                    </div>
-                                    <div class="">
-                                        <h2>Colores:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
+                                    <div class="row">
+                                        <!-- Imagen -->
+                                        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                                            <img src="./assets/Desktop/productos/chaqueta-jeans.png" class="img-fluid" alt="Producto">
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
+                                        <!-- Información del Producto -->
+                                        <div class=" col-12 col-lg-6 rounded-0">
+                                            <h2 class="fs-5 fw-bold pt-3">Chaqueta Jeans</h2>
+                                            <p class="">Modelo unisex oversize con cuello de gamuza. ¡Atemporal y auténtica!</p>
+                                            <hr>
+                                            <p class="fs-4 fw-bold">$40</p>
+                                            <p class="color-gris">Vendido y entregado por Riplay</p>
+                                            <hr>
+                                            <h4 class="fs-6 fw-bold">Colores:</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color1">
+                                                    <label class="form-check-label label-espacio" for="color1">
+                                                        Azul claro
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color2" checked>
+                                                    <label class="form-check-label label-espacio" for="color2">
+                                                        Offwhite
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color3" checked>
+                                                    <label class="form-check-label label-espacio" for="color3">
+                                                        Negro
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h4 class="mt-3 fs-6 fw-bold">Tamaño:</h4>
+                                            <div class="d-flex flex-wrap align-items-start pb-5">
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-s">
+                                                    <label class="form-check-label label-espacio" for="size-s">
+                                                        S
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center " type="radio" name="size" id="size-m" checked>
+                                                    <label class="form-check-label label-espacio" for="size-m">
+                                                        M
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-l">
+                                                    <label class="form-check-label label-espacio" for="size-l">
+                                                        L
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xl">
+                                                        XL
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xxl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xxl">
+                                                        XXL
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- Button Añadir al carrito -->
+                                            <button type="button" class="btn btn-primary color-lila rounded-0 border-0">
+                                                Añadir al carrito
+                                            </button>
                                         </div>
                                     </div>
-
-                                    <div class="">
-                                        <h2>Tamanho:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
                         </div>
@@ -500,75 +601,100 @@
                 <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/gafas.png" alt="Modelo masculino con blusa blanca y un par de gafas de lentes transparentes redondeadas, utilizando un portátil, con un perro caniche blanco en su regazo, y en un fondo blanco.">
                 <img class="d-none d-xl-block" src="./assets/Mobile/productos/gafas.png" alt="Modelo masculino con blusa blanca y un par de gafas de lentes transparentes redondeadas, utilizando un portátil, con un perro caniche blanco en su regazo, y en un fondo blanco.">
                 <div class="card-body">
-                    <h5 class="card-title">Gafas Retro</h5>
+                    <h5 class="card-title fw-bold">Gafas Retro</h5>
                     <p class="card-text text-menor">Montura metálica en grafito con lentes redondeadas. ¡Upgrade a tu estilo!</p>
-                    <p>$28</p>
-                    <a href="#" class="btn btn-primary color-lila rounded-0 border-0">Ver Más</a>
+                    <p class="fw-bold">$28</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        modal
+                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#carritoModal5">
+                        Ver Más
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="carritoModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title fs-5" id="exampleModalLabel">
-                                        <i class="bi bi-check-circle"></i>
+                                <div class="modal-header bg-black text-bg-dark">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        <i class="bi bi-check-circle color-amarillo"></i>
                                         Revisa detalles sobre el producto
-                                    </div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="">
-                                    <div>
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="">
-                                        <h2>Chaqueta Jeans</h2>
-                                        <p>Modelo unisex oversize con cuello de gamuza. ¡Atemporal y auténtica!</p>
-                                    </div>
-                                    <div class="">
-                                        <p>$40</p>
-                                        <p>Vendido y entregado por Riplay</p>
-                                    </div>
-                                    <div class="">
-                                        <h2>Colores:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
+                                    <div class="row">
+                                        <!-- Imagen -->
+                                        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                                            <img src="./assets/Desktop/productos/gafas.png" class="img-fluid" alt="Modelo masculino con blusa blanca y un par de gafas de lentes transparentes redondeadas, utilizando un portátil, con un perro caniche blanco en su regazo, y en un fondo blanco.">
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
+                                        <!-- Información del Producto -->
+                                        <div class=" col-12 col-lg-6 rounded-0">
+                                            <h2 class="fs-5 fw-bold pt-3">Gafas Retro</h2>
+                                            <p>Montura metálica en grafito con lentes redondeadas. ¡Upgrade a tu estilo!</p>
+                                            <hr>
+                                            <p class="fs-4 fw-bold">$28</p>
+                                            <p class="color-gris">Vendido y entregado por Riplay</p>
+                                            <hr>
+                                            <h4 class="fs-6 fw-bold">Colores:</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color1">
+                                                    <label class="form-check-label label-espacio" for="color1">
+                                                        Azul claro
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color2" checked>
+                                                    <label class="form-check-label label-espacio" for="color2">
+                                                        Offwhite
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color3" checked>
+                                                    <label class="form-check-label label-espacio" for="color3">
+                                                        Negro
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h4 class="mt-3 fs-6 fw-bold">Tamaño:</h4>
+                                            <div class="d-flex flex-wrap align-items-start pb-5">
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-s">
+                                                    <label class="form-check-label label-espacio" for="size-s">
+                                                        S
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center " type="radio" name="size" id="size-m" checked>
+                                                    <label class="form-check-label label-espacio" for="size-m">
+                                                        M
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-l">
+                                                    <label class="form-check-label label-espacio" for="size-l">
+                                                        L
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xl">
+                                                        XL
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xxl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xxl">
+                                                        XXL
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- Button Añadir al carrito -->
+                                            <button type="button" class="btn btn-primary color-lila rounded-0 border-0">
+                                                Añadir al carrito
+                                            </button>
                                         </div>
                                     </div>
-
-                                    <div class="">
-                                        <h2>Tamanho:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
                         </div>
@@ -583,75 +709,100 @@
                 <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/cartera.png" alt="Cintura, piernas y pies de modelo femenina vistiendo abrigo de color predominante beige con detalles en tono rojo y oscuro, con pantalones y par de zapatos de color negro, sosteniendo una bolsa de color beige, con fondo de edificio.">
                 <img class="d-none d-xl-block" src="./assets/Mobile/productos/cartera.png" alt="Cintura, piernas y pies de modelo femenina vistiendo abrigo de color predominante beige con detalles en tono rojo y oscuro, con pantalones y par de zapatos de color negro, sosteniendo una bolsa de color beige, con fondo de edificio.">
                 <div class="card-body">
-                    <h5 class="card-title">Cartera Camel</h5>
+                    <h5 class="card-title fw-bold">Cartera Camel</h5>
                     <p class="card-text text-menor">Bolso camel en cuero sintético de alta duración. ¡Ideal para acompañarte toda la vida!</p>
                     <p>$55</p>
-                    <a href="#" class="btn btn-primary color-lila rounded-0 border-0">Ver Más</a>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        modal
+                    <button type="button" class="btn btn-primary color-lila rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#carritoModal6">
+                        Ver Más
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="carritoModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title fs-5" id="exampleModalLabel">
-                                        <i class="bi bi-check-circle"></i>
+                                <div class="modal-header bg-black text-bg-dark">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        <i class="bi bi-check-circle color-amarillo"></i>
                                         Revisa detalles sobre el producto
-                                    </div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="">
-                                    <div>
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="">
-                                        <h2>Chaqueta Jeans</h2>
-                                        <p>Modelo unisex oversize con cuello de gamuza. ¡Atemporal y auténtica!</p>
-                                    </div>
-                                    <div class="">
-                                        <p>$40</p>
-                                        <p>Vendido y entregado por Riplay</p>
-                                    </div>
-                                    <div class="">
-                                        <h2>Colores:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
+                                    <div class="row">
+                                        <!-- Imagen -->
+                                        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                                            <img src="./assets/Desktop/productos/cartera.png" class="img-fluid" alt="Cintura, piernas y pies de modelo femenina vistiendo abrigo de color predominante beige con detalles en tono rojo y oscuro, con pantalones y par de zapatos de color negro, sosteniendo una bolsa de color beige, con fondo de edificio.">
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
+                                        <!-- Información del Producto -->
+                                        <div class=" col-12 col-lg-6 rounded-0">
+                                            <h2 class="fs-5 fw-bold pt-3">Cartera Camel</h2>
+                                            <p>Bolso camel en cuero sintético de alta duración. ¡Ideal para acompañarte toda la vida!</p>
+                                            <hr>
+                                            <p class="fs-4 fw-bold">$55</p>
+                                            <p class="color-gris">Vendido y entregado por Riplay</p>
+                                            <hr>
+                                            <h4 class="fs-6 fw-bold">Colores:</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color1">
+                                                    <label class="form-check-label label-espacio" for="color1">
+                                                        Azul claro
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color2" checked>
+                                                    <label class="form-check-label label-espacio" for="color2">
+                                                        Offwhite
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center">
+                                                    <input class="form-check-input input-center" type="radio" name="color" id="color3" checked>
+                                                    <label class="form-check-label label-espacio" for="color3">
+                                                        Negro
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <h4 class="mt-3 fs-6 fw-bold">Tamaño:</h4>
+                                            <div class="d-flex flex-wrap align-items-start pb-5">
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-s">
+                                                    <label class="form-check-label label-espacio" for="size-s">
+                                                        S
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center " type="radio" name="size" id="size-m" checked>
+                                                    <label class="form-check-label label-espacio" for="size-m">
+                                                        M
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-start me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-l">
+                                                    <label class="form-check-label label-espacio" for="size-l">
+                                                        L
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xl">
+                                                        XL
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex flex-column align-items-center me-1">
+                                                    <input class="form-check-input input-center" type="radio" name="size" id="size-xxl" checked>
+                                                    <label class="form-check-label label-espacio" for="size-xxl">
+                                                        XXL
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- Button Añadir al carrito -->
+                                            <button type="button" class="btn btn-primary color-lila rounded-0 border-0">
+                                                Añadir al carrito
+                                            </button>
                                         </div>
                                     </div>
-
-                                    <div class="">
-                                        <h2>Tamanho:</h2>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Default radio
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Default checked radio
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
                         </div>
