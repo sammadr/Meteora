@@ -19,6 +19,10 @@
     color: #fff;
 }
 
+.color-gris{
+    color: #CCCCCC;
+}
+
 .posicion{
     top:55%;
 }
@@ -31,4 +35,28 @@
     .posicion{
         top:40%;
     }
+}
+
+
+.form-check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 50px; */
+}
+
+.form-check-label {
+    margin-top: 0.25rem; 
+    margin-right: 1.3rem;
+    font-size: 1rem;
+}
+
+.form-check-label.label-espacio {
+    margin-left: -1rem; 
+
+}
+
+.input-center{
+    font-size: 80%;
+    margin-right: 2rem;
 }
