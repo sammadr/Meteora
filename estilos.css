@@ -27,17 +27,6 @@
     top:55%;
 }
 
-@media (min-width: 768px){
-    .div-novedades{
-        width: 696px;
-    }
-
-    .posicion{
-        top:40%;
-    }
-}
-
-
 .form-check {
     display: flex;
     flex-direction: column;
@@ -53,10 +42,23 @@
 
 .form-check-label.label-espacio {
     margin-left: -1rem; 
-
 }
 
 .input-center{
     font-size: 80%;
     margin-right: 2rem;
+}
+
+.modal-header .text-md-start {
+    text-align: left !important;
+}
+
+@media (min-width: 768px){
+    .div-novedades{
+        width: 696px;
+    }
+
+    .posicion{
+        top:40%;
+    }
 }
